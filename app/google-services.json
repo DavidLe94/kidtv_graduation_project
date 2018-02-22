@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "47900729952",
+    "firebase_url": "https://hl-entertainment.firebaseio.com",
+    "project_id": "hl-entertainment",
+    "storage_bucket": "hl-entertainment.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47900729952:android:39b7a6ffd72920bf",
+        "android_client_info": {
+          "package_name": "hl.kidtvchannel.haule.kidtvchannel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "47900729952-d9a08g6uaksb9qj0plal6j88le1t9uq1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hl.kidtvchannel.haule.kidtvchannel",
+            "certificate_hash": "41cf60096ca4fb85e2057de8a54bb279c662f68e"
+          }
+        },
+        {
+          "client_id": "47900729952-14lt80bj77iiets6moml6vnuqo0aeli8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxE9XNX8oBFLa4h-GXINFKCGF3FEpcasU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "47900729952-14lt80bj77iiets6moml6vnuqo0aeli8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

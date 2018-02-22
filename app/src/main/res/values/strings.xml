@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Kid TV</string>
+    <string name="watch_now">XEM NGAY</string>
+    <string name="derectors">Đạo diễn</string>
+    <string name="category">Thể loại</string>
+    <string name="description">Cốt truyện</string>
+    <string name="button_dismiss_dialog">OK</string>
+    <string name="message">Thông Báo</string>
+    <string name="loading">Đang tải...</string>
+
+    <string name="title_activity_flash_screen">FlashScreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="null_item">Danh sách trống!</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+</resources>

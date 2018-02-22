@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <!--text view header dialog-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/message"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="@color/colorPrimaryText"
+        android:textStyle="bold"
+        android:textSize="18dp"/>
+
+    <!--text view content message-->
+    <TextView
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:textColor="@color/colorPrimaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_view_content_message"/>
+
+    <!--button dismiss dialog-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_dismiss_dialog"
+        android:id="@+id/button_dismiss_dialog"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+
+</LinearLayout>
