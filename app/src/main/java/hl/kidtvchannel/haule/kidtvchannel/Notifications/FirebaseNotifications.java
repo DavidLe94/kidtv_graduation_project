@@ -4,15 +4,13 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
-import android.media.RingtoneManager;
-import android.net.Uri;
 import android.support.v4.app.NotificationCompat;
 
 import hl.kidtvchannel.haule.kidtvchannel.Activity.MainActivity;
 import hl.kidtvchannel.haule.kidtvchannel.R;
 
 /**
- * Created by Hau Le on 2/14/2018.
+ * Created by Hai Son on 2/14/2018.
  */
 
 public class FirebaseNotifications {

@@ -1,7 +1,7 @@
 package hl.kidtvchannel.haule.kidtvchannel.Notifications;
 
 /**
- * Created by Hau Le on 2/14/2018.
+ * Created by Hai Son on 2/14/2018.
  */
 
 public class Constants {

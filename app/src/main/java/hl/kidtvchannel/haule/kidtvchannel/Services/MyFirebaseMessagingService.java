@@ -7,7 +7,7 @@ import com.google.firebase.messaging.RemoteMessage;
 import hl.kidtvchannel.haule.kidtvchannel.Notifications.FirebaseNotifications;
 
 /**
- * Created by Hau Le on 2/8/2018.
+ * Created by Hai Son on 2/8/2018.
  */
 
 public class MyFirebaseMessagingService extends FirebaseMessagingService {

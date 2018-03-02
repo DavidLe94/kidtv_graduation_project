@@ -12,7 +12,7 @@ import hl.kidtvchannel.haule.kidtvchannel.Services.MyFirebaseMessagingService;
 
 public class SplashScreenActivity extends Activity {
     // Splash screen timer
-    private static int SPLASH_TIME_OUT = 3000;
+    private static int SPLASH_TIME_OUT = 2500;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +44,7 @@ public class SplashScreenActivity extends Activity {
             }
         }, SPLASH_TIME_OUT);
 
+        //call service listener notifications
         Intent intent = new Intent(this, MyFirebaseMessagingService.class);
         startService(intent);
     }
