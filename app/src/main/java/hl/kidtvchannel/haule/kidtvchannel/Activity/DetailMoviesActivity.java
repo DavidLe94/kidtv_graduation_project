@@ -9,7 +9,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
-import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
@@ -32,17 +31,14 @@ public class DetailMoviesActivity extends AppCompatActivity {
     private Button buttonWatch;
     private TextView textViewPlaylistName, textViewCreateDate,
             textViewDescription, textViewDerectors, textViewCategory;
-
     private String PLAYLIST_ID = "";
     private Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //disable activity animation
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-//        getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN,
-//                WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN);
+        //disable activity animation
         overridePendingTransition(0, 0);
         //add content
         setContentView(R.layout.activity_detail_movies);
@@ -134,11 +130,6 @@ public class DetailMoviesActivity extends AppCompatActivity {
     */
     private void addMoviesLocal(){
         Sqlite db = new Sqlite(this, "movies.sqlite",null,3);
-        //create table on database, if table not exists
-//        db.createTable("CREATE TABLE IF NOT EXISTS Movies(Id INTEGER PRIMARY KEY AUTOINCREMENT, " +
-//                "playlistName VARCHAR, playlistId VARCHAR, image VARCHAR, " +
-//                "createDate VARCHAR, category VARCHAR, derectors VARCHAR, description VARCHAR)");
-
         //check movies exists or not
         Cursor cursor = db.GetData("SELECT * FROM Movies");
         cursor.moveToFirst();

@@ -82,8 +82,6 @@ public class MainActivity extends AppCompatActivity{
     }
 
     private void _notifications() {
-        Uri alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
             NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
 
@@ -94,7 +92,6 @@ public class MainActivity extends AppCompatActivity{
             notificationChannel.enableLights(true);
             notificationChannel.setLightColor(Color.RED);
             notificationChannel.enableVibration(true);
-            //notificationChannel.setSound(alarmSound, RingtoneManager.TYPE_NOTIFICATION);
 
             notificationChannel.setVibrationPattern(new long[]{100, 200, 300, 400, 500, 400, 300, 200, 400});
 
@@ -104,10 +101,11 @@ public class MainActivity extends AppCompatActivity{
 
     private void _createDatabaseLocal() {
         Sqlite db = new Sqlite(this, "movies.sqlite",null,3);
-        //create table on database, if table not exists
-        db.createTable("CREATE TABLE IF NOT EXISTS Movies(Id INTEGER PRIMARY KEY AUTOINCREMENT, " +
+        String sql = "CREATE TABLE IF NOT EXISTS Movies(Id INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 "playlistName VARCHAR, playlistId VARCHAR, image VARCHAR, " +
-                "createDate VARCHAR, category VARCHAR, derectors VARCHAR, description VARCHAR)");
+                "createDate VARCHAR, category VARCHAR, derectors VARCHAR, description VARCHAR)";
+        //create table on database, if table not exists
+        db.createTable(sql);
     }
 
     private void _initFirebase() {

@@ -1,9 +1,7 @@
 package hl.kidtvchannel.haule.kidtvchannel.Adapter;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.support.v4.app.ActivityCompat;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -15,7 +13,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import hl.kidtvchannel.haule.kidtvchannel.Activity.DetailMoviesActivity;
-import hl.kidtvchannel.haule.kidtvchannel.Activity.MainActivity;
 import hl.kidtvchannel.haule.kidtvchannel.Models.Slider;
 import hl.kidtvchannel.haule.kidtvchannel.R;
 
