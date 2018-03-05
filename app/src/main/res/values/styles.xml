@@ -12,10 +12,10 @@
 
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar" tools:ignore="DuplicateDefinition">
         <!-- Customize your theme here. -->
+
     </style>
     <!--custom for action bar-->
     <style name="CustomTheme" parent="Theme.AppCompat.Light">
-
         <item name="contentInsetStart">0dp</item>
         <item name="contentInsetEnd">0dp</item>
     </style>
